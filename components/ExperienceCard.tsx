@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { HeroYellow } from '../assets/images';
 import { siJavascript } from 'simple-icons/icons';
@@ -28,19 +29,19 @@ const ExperienceCard = (props: Props) => {
         <h4 className="text-4xl font-light">Frontend Developer Intern</h4>
         <p className="font-bold text-2xl mt-1">New Ocean Inc.</p>
         <div className="flex space-x-2 my-2">
-          <img
+          <Image
             height="32"
             width="32"
             src={`https://cdn.simpleicons.org/${siJavascript.slug}`}
             alt="js icon"
           />
-          <img
+          <Image
             height="32"
             width="32"
             src={`https://cdn.simpleicons.org/${siJavascript.slug}`}
             alt="js icon"
           />
-          <img
+          <Image
             height="32"
             width="32"
             src={`https://cdn.simpleicons.org/${siJavascript.slug}`}
